@@ -47,15 +47,6 @@ async def start(bot, update):
             chat_id=update.chat.id,
             text=Translation.START_TEXT.format(update.from_user.first_name),
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            "Source", url="https://github.com/X-Gorn/X-URL-Uploader"
                         ),
-                        InlineKeyboardButton("Project Channel", url="https://t.me/xTeamBots"),
-                    ],
-                    [InlineKeyboardButton("Author", url="https://t.me/xgorn")],
-                ]
-            ),
             reply_to_message_id=update.message_id
         )
